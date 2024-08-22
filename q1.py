@@ -9,7 +9,7 @@ def insert_data():
 
     with open("emp.dat", "ab") as f:
         pickle.dump(emp_rec, f)
-
+'''
 def display_data():
     with open("emp.dat", "rb") as f:
         while True:
@@ -17,7 +17,7 @@ def display_data():
                 emp_rec = pickle.load(f)
                 print(f"EMPNo: {emp_rec['EMPNo']}, Ename: {emp_rec['Ename']}, Esal: {emp_rec['Esal']}")
             except EOFError:
-                break
+                break'''
 
 '''while True:
     print("1. Insert Data")
