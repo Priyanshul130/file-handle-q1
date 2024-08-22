@@ -8,12 +8,12 @@ def insert_data():
     emp_rec = {"EMPNo": emp_no, "Ename": ename, "Esal": esal}
 
     with open("emp.dat", "ab") as f:
-        pickle.dump(emp_rec, f)
+        pickle.dump(emp_rec, f) 
 '''
 def display_data():
     with open("emp.dat", "rb") as f:
         while True:
-            try:
+            try:s
                 emp_rec = pickle.load(f)
                 print(f"EMPNo: {emp_rec['EMPNo']}, Ename: {emp_rec['Ename']}, Esal: {emp_rec['Esal']}")
             except EOFError:
